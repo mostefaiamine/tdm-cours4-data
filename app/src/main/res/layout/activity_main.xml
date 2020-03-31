@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dz.esi.demodata.MainActivity">
+
+    <Button
+        android:id="@+id/btnSharedPreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Shared Preferences"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInternalStorage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Internal Storage"
+        app:layout_constraintEnd_toEndOf="@+id/btnSharedPreferences"
+        app:layout_constraintStart_toStartOf="@+id/btnSharedPreferences"
+        app:layout_constraintTop_toBottomOf="@+id/btnSharedPreferences" />
+
+    <Button
+        android:id="@+id/btnExternalStorage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="External Storage"
+        app:layout_constraintEnd_toEndOf="@+id/btnInternalStorage"
+        app:layout_constraintStart_toStartOf="@+id/btnInternalStorage"
+        app:layout_constraintTop_toBottomOf="@+id/btnInternalStorage" />
+
+    <Button
+        android:id="@+id/btnDatabase"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Database"
+        app:layout_constraintEnd_toEndOf="@+id/btnExternalStorage"
+        app:layout_constraintStart_toStartOf="@+id/btnExternalStorage"
+        app:layout_constraintTop_toBottomOf="@+id/btnExternalStorage" />
+</androidx.constraintlayout.widget.ConstraintLayout>
